@@ -7,5 +7,10 @@ For using this, you should check out monolog's documentation: https://github.com
 
 ## Example:
 ```php
+use Monolog\Logger;
+use phylogram\MonologWPMailHandler\WPMailHandler;
 
+$logger = new Logger('channel');
+$logger->pushHandler(new WPMailHandler(['any.valid@mail.addresses'], Logger::WARNING));
+$logger->alert('No more coffee in office');
 ```
