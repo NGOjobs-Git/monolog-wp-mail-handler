@@ -1,0 +1,25 @@
+{
+    "name": "phylogram/monolog-wp-mail-handler",
+    "description": "A Monolog Handler to send mails with wordpress' wp_mail function. This only will work in wordpress. Very simple :-)",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "^2.1"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "phylogram",
+            "email": "philip.roeggla@phylogram.eu"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "phylogram\\MonologWPMailHandler\\": "src"
+        }
+    }
+}
